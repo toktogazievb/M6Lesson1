@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    id("org.jetbrains.kotlin.plugin.compose")
 }
 
 android {
@@ -50,6 +51,9 @@ android {
 }
 
 dependencies {
+
+    //Nav component https://developer.android.com/develop/ui/compose/navigation?hl=ru
+    implementation(libs.androidx.navigation.compose)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
